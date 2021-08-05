@@ -1,0 +1,245 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+.main-section{
+    background-image: url(../images/background.png);
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 150px;
+    margin-top: 150px;
+}
+.logo img{
+    width: 60px;
+}
+.fa-search{
+    background-color: white;
+    width: 130px;
+    height: 30px;
+    box-shadow: 1px 1px 20px #ccc;
+    border-radius: 30%;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    right: 5%;
+}
+span{
+    color: #aaa;
+    margin-left: 10px;
+    padding-right: 50px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons{
+    box-shadow: 1px 1px 20px #ccc;
+    padding: 10px; 
+    border-radius: 30%;
+    position: fixed;
+    width: 40px;
+    height: 150px;
+    margin: 30px; 
+    margin-left: 5%;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+    padding-bottom: 20px;
+}
+.main img{
+    width: 350px;
+}
+.paragraph h2{
+    color: purple;
+}
+.paragraph span{
+    letter-spacing: 8px;
+    color: purple;
+    margin-left: 3px;
+    line-height: 3;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30%;
+    margin-top: 25px;
+    font-size: 12px;
+}
+.product-section h2{
+    text-align: center;
+    color: purple;
+    margin: 20px auto;
+}
+.product-section .product{
+    display: flex;
+} 
+/* Start Portfolio */
+.imgs-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 45px;
+}
+.imgs-container .box{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 20px #ccc;
+    margin-right: 25px;
+} 
+.imgs-container .box:hover .caption p{
+    color: purple;
+}
+.imgs-container .box::before{
+    content: "Add To Cart";
+    width: 100px;
+    height: 40px;
+    background-color: purple;
+    color: white;
+    position: absolute;
+    border-radius: 30%;
+    bottom: 0;
+    left: 35%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    /*display: none; */
+}
+.imgs-container .box::before .box:hover {
+    content: "";
+    display: block;
+}
+@media (min-width: 768px){
+    .portfolio .imgs-container .box{
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 991px){
+    .portfolio .imgs-container .box{
+        flex-basis: 25%;
+    }
+}
+.imgs-container .box img{
+    width: 240px;
+    height: 240px;
+    /*max-width: 100%; */
+    transition: 0.3s;
+    margin: 30px 30px 10px;
+}
+.box .caption h4{
+    text-align: center; 
+    margin-bottom: 10px;
+    color: #aaa;
+    font-weight: normal;
+}
+.box .caption p{
+    text-align: center; 
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+/* End Portfolio */
+.footer h2{
+    text-align: center;
+    padding: 50px;
+}
+form input[type="email"]{
+    box-shadow: 1px 1px 20px #ccc;
+    border-radius: 30%;
+    border: none;
+    background-color: white;
+    padding: 10px 120px 10px 10px;
+    margin-left: 35%;
+}
+form input[type="submit"]{
+    width: 90px;
+    background-color: black;
+    color: white;
+    padding: 7px 0; 
+    border: none;
+    text-transform: uppercase;
+    border-radius: 30%;
+    margin-left: -8%;
+    font-size: 12px;
+}
+@media(max-width: 667px){
+    form input[type="email"]{
+        margin-left: 17%;
+    } 
+    form input[type="submit"]{
+        margin-left: -19%;
+    }
+}
+@media(max-width: 414px){
+    form input[type="email"]{
+        margin-left: 10%;
+    } 
+    form input[type="submit"]{
+        margin-left: -30%;
+    }
+}
+form input[type="email"]:focus,
+form input[type="submit"]:focus{
+    outline: none;
+}
+form ::placeholder{
+    color: #aaa;
+}
+.footer hr{
+    width: 80%;
+    margin: 10px auto;
+    border-color: white;
+}
+.footer img{
+    width: 60px;
+    margin: 7% 0 4% 47%;
+}
+.footer .element{
+    display: flex;
+    box-shadow: 1px 1px 20px #ccc;
+    width: 15%;
+    margin-left: 42%;
+    padding: 10px 30px;
+    border-radius: 30%;
+}
+.footer .women{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.footer .copyright{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5% auto;
+}
